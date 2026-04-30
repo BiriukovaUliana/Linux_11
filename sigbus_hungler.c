@@ -7,7 +7,7 @@
 #include <fcntl.h>
 
 void sigbus_handler(int sig, siginfo_t *si, void *unused) {
-    printf("\n--- Отримано сигнал SIGBUS ---\n");
+    printf("\nОтримано сигнал SIGBUS\n");
     printf("Адреса помилки: %p\n", si->si_addr);
 
     switch (si->si_code) {
